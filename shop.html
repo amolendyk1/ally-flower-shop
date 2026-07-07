@@ -1,253 +1,193 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop — The Bud & Bloom</title>
-  <meta name="description" content="Shop beautiful bouquets and plants at The Bud & Bloom. Browse our collection and purchase with easy checkout.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🌸%3C/text%3E%3C/svg%3E">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Meal Planner Pro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">The Bud <span>&amp; Bloom</span></a>
-      <div class="header-right">
-        <nav>
-          <ul class="nav-links" id="navLinks">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="flower-library.html">Flowers</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a href="plant-guide.html">Plants</a></li>
-            <li><a href="shop.html" class="active">Shop</a></li>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-icons">
-          <a href="cart.html" aria-label="Cart">🛒</a>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-  </header>
+  <body>
 
-  <section class="page-banner">
-    <h1>Shop</h1>
-    <p>Browse our collection of handcrafted bouquets and beautiful plants. Every purchase supports The Bud &amp; Bloom.</p>
-  </section>
+    <!-- HEADER -->
+    <header class="site-header">
+      <h1 class="site-title">meal planner pro</h1>
 
-  <section class="section">
-    <div class="section-inner">
-      <h2 class="section-title">Bouquets</h2>
-      <p class="section-subtitle">Handcrafted arrangements for every occasion.</p>
-      <div class="product-grid">
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="flower-library.html">Flowers</a>
+        <a class="nav-link" href="bouquets.html">Bouquets</a>
+        <a class="nav-link" href="plant-guide.html">Plants</a>
+        <a class="nav-link active" href="shop.html">Shop</a>
+        <a class="nav-link" href="about.html">Our Story</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-      <div class="product-card">
-        <img src="images/blush-cloud-harmony.jpg" alt="Blush Cloud Harmony" />
-        <div class="product-info">
+    <!-- STRIPE -->
+    <div class="header-stripe"></div>
+
+    <!-- PAGE TITLE -->
+    <section class="index-box" style="max-width: 900px; margin: 40px auto;">
+      <h2>Shop</h2>
+      <p>
+        Browse our collection of handcrafted bouquets and beautiful plants.
+        Every purchase supports our growing community.
+      </p>
+    </section>
+
+    <!-- BOUQUETS SECTION -->
+    <section class="index-wrapper">
+      <h2>Bouquets</h2>
+      <p>Handcrafted arrangements for every occasion.</p>
+
+      <div class="library-grid">
+
+        <div class="meal-card">
+          <img src="images/blush-cloud-harmony.jpg" alt="Blush Cloud Harmony" />
           <h3>Blush Cloud Harmony</h3>
-          <p>Light pink hydrangeas, deep pink roses &amp; peonies</p>
-          <p class="price">$60.00</p>
-          <button class="btn-add" onclick="addToCart('Blush Cloud Harmony', 60.00)">Add to Cart</button>
+          <p>Light pink hydrangeas, deep pink roses & peonies</p>
+          <p><strong>$60.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Blush Cloud Harmony', 60.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/pastel-whisper-garden.jpg" alt="Pastel Whisper Garden" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/pastel-whisper-garden.jpg" alt="Pastel Whisper Garden" />
           <h3>Pastel Whisper Garden</h3>
-          <p>Pale pink roses, blush hyacinths &amp; white tulips</p>
-          <p class="price">$52.00</p>
-          <button class="btn-add" onclick="addToCart('Pastel Whisper Garden', 52.00)">Add to Cart</button>
+          <p>Pale pink roses, blush hyacinths & white tulips</p>
+          <p><strong>$52.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Pastel Whisper Garden', 52.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/rosy-meadow-bloom.jpg" alt="Rosy Meadow Bloom" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/rosy-meadow-bloom.jpg" alt="Rosy Meadow Bloom" />
           <h3>Rosy Meadow Bloom</h3>
-          <p>Pink roses, cream roses &amp; bright pink blossoms</p>
-          <p class="price">$56.00</p>
-          <button class="btn-add" onclick="addToCart('Rosy Meadow Bloom', 56.00)">Add to Cart</button>
+          <p>Pink roses, cream roses & bright pink blossoms</p>
+          <p><strong>$56.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Rosy Meadow Bloom', 56.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/chrysanthemum-lace-bouquet.jpg" alt="Chrysanthemum Lace Bouquet" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/chrysanthemum-lace-bouquet.jpg" alt="Chrysanthemum Lace Bouquet" />
           <h3>Chrysanthemum Lace Bouquet</h3>
-          <p>Chrysanthemums, spray roses &amp; greenery</p>
-          <p class="price">$45.00</p>
-          <button class="btn-add" onclick="addToCart('Chrysanthemum Lace Bouquet', 45.00)">Add to Cart</button>
+          <p>Chrysanthemums, spray roses & greenery</p>
+          <p><strong>$45.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Chrysanthemum Lace Bouquet', 45.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/magenta petal symthony.jpg" alt="Magenta Petal Symphony" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/magenta petal symthony.jpg" alt="Magenta Petal Symphony" />
           <h3>Magenta Petal Symphony</h3>
-          <p>Magenta ranunculus, purple blooms &amp; pink blossoms</p>
-          <p class="price">$62.00</p>
-          <button class="btn-add" onclick="addToCart('Magenta Petal Symphony', 62.00)">Add to Cart</button>
+          <p>Magenta ranunculus, purple blooms & pink blossoms</p>
+          <p><strong>$62.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Magenta Petal Symphony', 62.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/lavender-rose-drift.jpg" alt="Lavender Rose Drift" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/lavender-rose-drift.jpg" alt="Lavender Rose Drift" />
           <h3>Lavender Rose Drift</h3>
-          <p>Lavender roses, spray lavender, baby's breath &amp; eucalyptus</p>
-          <p class="price">$54.00</p>
-          <button class="btn-add" onclick="addToCart('Lavender Rose Drift', 54.00)">Add to Cart</button>
+          <p>Lavender roses, spray lavender, baby's breath & eucalyptus</p>
+          <p><strong>$54.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Lavender Rose Drift', 54.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/peony-rose-lush.jpg" alt="Peony Rose Lush" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/peony-rose-lush.jpg" alt="Peony Rose Lush" />
           <h3>Peony Rose Lush</h3>
-          <p>Peonies, garden roses, spray roses &amp; greenery</p>
-          <p class="price">$64.00</p>
-          <button class="btn-add" onclick="addToCart('Peony Rose Lush', 64.00)">Add to Cart</button>
+          <p>Peonies, garden roses, spray roses & greenery</p>
+          <p><strong>$64.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Peony Rose Lush', 64.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/rose-and-alstroemeria-charm.jpg" alt="Rose &amp; Alstroemeria Charm" />
-        <div class="product-info">
-          <h3>Rose &amp; Alstroemeria Charm</h3>
-          <p>Pink roses, alstroemeria, waxflower &amp; foliage</p>
-          <p class="price">$48.00</p>
-          <button class="btn-add" onclick="addToCart('Rose &amp; Alstroemeria Charm', 48.00)">Add to Cart</button>
+        <div class="meal-card">
+          <img src="images/rose-and-alstroemeria-charm.jpg" alt="Rose & Alstroemeria Charm" />
+          <h3>Rose & Alstroemeria Charm</h3>
+          <p>Pink roses, alstroemeria, waxflower & foliage</p>
+          <p><strong>$48.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Rose & Alstroemeria Charm', 48.00)">Add to Cart</button>
         </div>
+
       </div>
+    </section>
 
-    </div>
-  </section>
+    <!-- PLANTS SECTION -->
+    <section class="index-wrapper">
+      <h2>Plants</h2>
+      <p>Beautiful plants to brighten your home or garden.</p>
 
-  <section class="section" style="padding-top: 0;">
-    <div class="section-inner">
-      <h2 class="section-title">Plants</h2>
-      <p class="section-subtitle">Beautiful plants to brighten your home or garden.</p>
-      <div class="product-grid">
+      <div class="library-grid">
 
-      <div class="product-card">
-        <img src="images/snake-plant.jpg" alt="Snake Plant" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/snake-plant.jpg" alt="Snake Plant" />
           <h3>Snake Plant</h3>
-          <p>Hardy air-purifying plant — nearly indestructible</p>
-          <p class="price">$25.00</p>
-          <button class="btn-add" onclick="addToCart('Snake Plant', 25.00)">Add to Cart</button>
+          <p>Hardy air‑purifying plant — nearly indestructible</p>
+          <p><strong>$25.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Snake Plant', 25.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/striped-calathea.jpg" alt="Striped Calathea" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/striped-calathea.jpg" alt="Striped Calathea" />
           <h3>Striped Calathea</h3>
           <p>Stunning striped foliage — perfect for bright indoor spaces</p>
-          <p class="price">$32.00</p>
-          <button class="btn-add" onclick="addToCart('Striped Calathea', 32.00)">Add to Cart</button>
+          <p><strong>$32.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Striped Calathea', 32.00)">Add to Cart</button>
         </div>
-      </div>
 
-      <div class="product-card">
-        <img src="images/anthurium.jpg" alt="Anthurium" />
-        <div class="product-info">
+        <div class="meal-card">
+          <img src="images/anthurium.jpg" alt="Anthurium" />
           <h3>Anthurium</h3>
-          <p>Tropical beauty with vibrant heart-shaped blooms</p>
-          <p class="price">$35.00</p>
-          <button class="btn-add" onclick="addToCart('Anthurium', 35.00)">Add to Cart</button>
+          <p>Tropical beauty with vibrant heart‑shaped blooms</p>
+          <p><strong>$35.00</strong></p>
+          <button class="add-meal-btn" onclick="addToCart('Anthurium', 35.00)">Add to Cart</button>
         </div>
-      </div>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3>The Bud &amp; Bloom</h3>
-        <p>Flower education, beautifully curated bouquets, and hands-on floral arrangement classes. Let your creativity bloom.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="flower-library.html">Flowers</a></li>
-          <li><a href="bouquets.html">Bouquets</a></li>
-          <li><a href="plant-guide.html">Plants</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Shop</h4>
-        <ul>
-          <li><a href="shop.html">All Products</a></li>
-          <li><a href="bouquets.html">Bouquets</a></li>
-          <li><a href="plant-guide.html">Plants</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <ul>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="contact.html">Class Sign-Up</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 The Bud &amp; Bloom. All rights reserved. Designed with love for Nely Molendyk.</p>
-    </div>
-  </footer>
+    <!-- FOOTER -->
+    <footer class="thin-footer">
+      <p>Meal Planner Pro © 2026</p>
+    </footer>
 
-  <script>
-    // Product catalog
-    const products = {
-      "Blush Cloud Harmony": { img: "images/blush-cloud-harmony.jpg", price: 60.0 },
-      "Pastel Whisper Garden": { img: "images/pastel-whisper-garden.jpg", price: 52.0 },
-      "Rosy Meadow Bloom": { img: "images/rosy-meadow-bloom.jpg", price: 56.0 },
-      "Chrysanthemum Lace Bouquet": { img: "images/chrysanthemum-lace-bouquet.jpg", price: 45.0 },
-      "Magenta Petal Symphony": { img: "images/magenta%20petal%20symthony.jpg", price: 62.0 },
-      "Lavender Rose Drift": { img: "images/lavender-rose-drift.jpg", price: 54.0 },
-      "Peony Rose Lush": { img: "images/peony-rose-lush.jpg", price: 64.0 },
-      "Rose & Alstroemeria Charm": { img: "images/rose-and-alstroemeria-charm.jpg", price: 48.0 },
-      "Snake Plant": { img: "images/snake-plant.jpg", price: 25.0 },
-      "Striped Calathea": { img: "images/striped-calathea.jpg", price: 32.0 },
-      Anthurium: { img: "images/anthurium.jpg", price: 35.0 },
-    };
+    <script>
+      const products = {
+        "Blush Cloud Harmony": { img: "images/blush-cloud-harmony.jpg", price: 60.0 },
+        "Pastel Whisper Garden": { img: "images/pastel-whisper-garden.jpg", price: 52.0 },
+        "Rosy Meadow Bloom": { img: "images/rosy-meadow-bloom.jpg", price: 56.0 },
+        "Chrysanthemum Lace Bouquet": { img: "images/chrysanthemum-lace-bouquet.jpg", price: 45.0 },
+        "Magenta Petal Symphony": { img: "images/magenta petal symthony.jpg", price: 62.0 },
+        "Lavender Rose Drift": { img: "images/lavender-rose-drift.jpg", price: 54.0 },
+        "Peony Rose Lush": { img: "images/peony-rose-lush.jpg", price: 64.0 },
+        "Rose & Alstroemeria Charm": { img: "images/rose-and-alstroemeria-charm.jpg", price: 48.0 },
+        "Snake Plant": { img: "images/snake-plant.jpg", price: 25.0 },
+        "Striped Calathea": { img: "images/striped-calathea.jpg", price: 32.0 },
+        "Anthurium": { img: "images/anthurium.jpg", price: 35.0 }
+      };
 
-    function getCart() {
-      try {
-        return JSON.parse(localStorage.getItem("budCart")) || [];
-      } catch {
-        return [];
+      function getCart() {
+        try {
+          return JSON.parse(localStorage.getItem("budCart")) || [];
+        } catch {
+          return [];
+        }
       }
-    }
 
-    function saveCart(cart) {
-      localStorage.setItem("budCart", JSON.stringify(cart));
-    }
-
-    function addToCart(name, price) {
-      let cart = getCart();
-      const existing = cart.find((item) => item.name === name);
-      if (existing) {
-        existing.qty += 1;
-      } else {
-        cart.push({ name, price, qty: 1 });
+      function saveCart(cart) {
+        localStorage.setItem("budCart", JSON.stringify(cart));
       }
-      saveCart(cart);
-      alert(name + " added to cart!");
-    }
 
-    document.getElementById('hamburger').addEventListener('click', function () {
-      document.getElementById('navLinks').classList.toggle('open');
-    });
-  </script>
+      function addToCart(name, price) {
+        let cart = getCart();
+        const existing = cart.find((item) => item.name === name);
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ name, price, qty: 1 });
+        }
+        saveCart(cart);
+        alert(name + " added to cart!");
+      }
+    </script>
 
-</body>
+  </body>
 </html>

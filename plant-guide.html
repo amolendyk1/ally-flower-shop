@@ -3,190 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plant Guide — The Bud & Bloom</title>
-    <meta
-      name="description"
-      content="Learn about different plants, their climate and weather needs, and expert care instructions from The Bud & Bloom."
-    />
+    <title>Plant Guide — Meal Planner Pro Edition</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header>
-      <div class="header-inner">
-        <a href="index.html" class="logo">The Bud <span>&amp; Bloom</span></a>
-        <div class="header-right">
-          <nav>
-            <ul class="nav-links" id="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="flower-library.html">Flowers</a></li>
-              <li><a href="bouquets.html">Bouquets</a></li>
-              <li><a href="plant-guide.html" class="active">Plants</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="about.html">Our Story</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-          <div class="header-icons">
-            <a href="cart.html" aria-label="Cart">🛒</a>
-          </div>
-          <button
-            class="hamburger"
-            id="hamburger"
-            aria-label="Toggle navigation"
-          >
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+      <h1 class="site-title">meal planner pro</h1>
+
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="flower-library.html">Flowers</a>
+        <a class="nav-link" href="bouquets.html">Bouquets</a>
+        <a class="nav-link active" href="plant-guide.html">Plants</a>
+        <a class="nav-link" href="shop.html">Shop</a>
+        <a class="nav-link" href="about.html">Our Story</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+      </nav>
     </header>
 
-    <section class="page-banner">
-      <h1>Plants</h1>
+    <!-- STRIPE -->
+    <div class="header-stripe"></div>
+
+    <!-- PAGE TITLE -->
+    <section class="index-box" style="max-width: 900px; margin: 40px auto;">
+      <h2>Plants</h2>
       <p>
         Your guide to selecting and caring for beautiful plants — from indoor
         greenery to outdoor garden favorites.
       </p>
     </section>
 
-    <section class="content-section">
-      <div class="card-grid">
+    <!-- PLANT GRID -->
+    <section class="index-wrapper">
+      <div class="library-grid">
+
         <!-- Snake Plant -->
-        <div class="card">
+        <div class="meal-card">
           <img src="images/snake-plant.jpg" alt="Snake Plant" />
-          <div class="card-content">
-            <h3>Snake Plant</h3>
-            <p class="subtitle">Sansevieria trifasciata</p>
-            <p>
-              <strong>Climate:</strong> Arid / tropical. Extremely adaptable
-              indoors.
-            </p>
-            <p>
-              <strong>Sun:</strong> Low to bright indirect light — very
-              forgiving.
-            </p>
-            <p>
-              <strong>Water:</strong> Very low — water every 3-4 weeks. Let soil
-              dry completely.
-            </p>
-            <p>
-              <strong>Soil:</strong> Well-draining cactus mix or general potting
-              soil with sand.
-            </p>
-            <p>
-              <strong>Care tips:</strong> Nearly indestructible. Excellent air
-              purifier. Keep away from pets (mildly toxic). Reduce watering in
-              winter.
-            </p>
-          </div>
+          <h3>Snake Plant</h3>
+          <p><strong>Climate:</strong> Arid / tropical. Extremely adaptable indoors.</p>
+          <p><strong>Sun:</strong> Low to bright indirect light — very forgiving.</p>
+          <p><strong>Water:</strong> Very low — water every 3–4 weeks.</p>
+          <p><strong>Soil:</strong> Well‑draining cactus mix.</p>
+          <p><strong>Care tips:</strong> Nearly indestructible. Excellent air purifier.</p>
         </div>
 
         <!-- Striped Calathea -->
-        <div class="card">
+        <div class="meal-card">
           <img src="images/striped-calathea.jpg" alt="Striped Calathea" />
-          <div class="card-content">
-            <h3>Striped Calathea</h3>
-            <p class="subtitle">Goeppertia picturata</p>
-            <p>
-              <strong>Climate:</strong> Tropical / humid. Thrives in warm,
-              moisture-rich environments.
-            </p>
-            <p>
-              <strong>Sun:</strong> Low to bright indirect light. No direct sun.
-            </p>
-            <p>
-              <strong>Water:</strong> Moderate — keep soil evenly moist. Use
-              distilled or filtered water to prevent leaf tip burn.
-            </p>
-            <p>
-              <strong>Soil:</strong> Peat-based potting mix with perlite for
-              drainage. Slightly acidic preferred.
-            </p>
-            <p>
-              <strong>Care tips:</strong> High humidity is essential — mist
-              daily or use a pebble tray. Wipe leaves gently to keep them shiny.
-              Avoid cold drafts.
-            </p>
-          </div>
+          <h3>Striped Calathea</h3>
+          <p><strong>Climate:</strong> Tropical / humid.</p>
+          <p><strong>Sun:</strong> Low to bright indirect light.</p>
+          <p><strong>Water:</strong> Keep soil evenly moist.</p>
+          <p><strong>Soil:</strong> Peat‑based mix with perlite.</p>
+          <p><strong>Care tips:</strong> Mist daily. Avoid cold drafts.</p>
         </div>
 
         <!-- Anthurium -->
-        <div class="card">
+        <div class="meal-card">
           <img src="images/anthurium.jpg" alt="Anthurium" />
-          <div class="card-content">
-            <h3>Anthurium</h3>
-            <p class="subtitle">Anthurium andraeanum</p>
-            <p>
-              <strong>Climate:</strong> Tropical / humid. Thrives in warm, humid
-              environments with indirect light.
-            </p>
-            <p><strong>Sun:</strong> Bright indirect light. No direct sun.</p>
-            <p>
-              <strong>Water:</strong> Moderate — keep soil evenly moist. Mist
-              regularly to maintain humidity.
-            </p>
-            <p>
-              <strong>Soil:</strong> Well-draining, peat-based potting mix with
-              perlite.
-            </p>
-            <p>
-              <strong>Care tips:</strong> Wipe leaves with a damp cloth to keep
-              pores clean. Fertilize monthly in spring and summer. Repot every 2
-              years.
-            </p>
-          </div>
+          <h3>Anthurium</h3>
+          <p><strong>Climate:</strong> Tropical / humid.</p>
+          <p><strong>Sun:</strong> Bright indirect light.</p>
+          <p><strong>Water:</strong> Keep soil moist. Mist regularly.</p>
+          <p><strong>Soil:</strong> Peat‑based mix with perlite.</p>
+          <p><strong>Care tips:</strong> Fertilize monthly. Repot every 2 years.</p>
         </div>
+
       </div>
     </section>
 
-    <footer>
-      <div class="footer-inner">
-        <div class="footer-brand">
-          <h3>The Bud &amp; Bloom</h3>
-          <p>
-            Flower education, beautifully curated bouquets, and hands-on floral
-            arrangement classes. Let your creativity bloom.
-          </p>
-        </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul>
-            <li><a href="flower-library.html">Flowers</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-
-            <li><a href="plant-guide.html">Plants</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Shop</h4>
-          <ul>
-            <li><a href="shop.html">All Products</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a href="plant-guide.html">Plants</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Company</h4>
-          <ul>
-            <li><a href="about.html">Our Story</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">Class Sign-Up</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2026 The Bud &amp; Bloom. All rights reserved. Designed with
-          love for Nely Molendyk.
-        </p>
-      </div>
+    <!-- FOOTER -->
+    <footer class="thin-footer">
+      <p>Meal Planner Pro © 2026</p>
     </footer>
 
-    <script>
-      document
-        .getElementById("hamburger")
-        .addEventListener("click", function () {
-          document.getElementById("navLinks").classList.toggle("open");
-        });
-    </script>
   </body>
 </html>
